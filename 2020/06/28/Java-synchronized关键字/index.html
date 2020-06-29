@@ -85,16 +85,16 @@
 <meta property="og:url" content="http://yoursite.com/2020/06/28/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/index.html">
 <meta property="og:site_name" content="问问龙大宝">
 <meta property="og:description" content="在Java中，synchronized关键字是用来控制线程同步的，就是在多线程的环境下，控制synchronized代码段不被多个线程同时执行。synchronized既可以加在一段代码上，也可以加在方法上">
-<meta property="og:image" content="http://yoursite.com/.com//blog/source/_posts/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/syncDemo.png">
-<meta property="og:image" content="http://yoursite.com/.com//blog/source/_posts/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/staticSycnDemo.png">
-<meta property="og:image" content="http://yoursite.com/.com//blog/source/_posts/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/syncDemoMethod.png">
-<meta property="og:image" content="http://yoursite.com/.com//blog/source/_posts/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/syncClassDemo.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/28/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/_posts/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/syncDemo.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/28/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/blog/source/_posts/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/staticSycnDemo.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/28/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/blog/source/_posts/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/syncDemoMethod.png">
+<meta property="og:image" content="http://yoursite.com/2020/06/28/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/blog/source/_posts/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/syncClassDemo.png">
 <meta property="article:published_time" content="2020-06-28T09:49:50.000Z">
-<meta property="article:modified_time" content="2020-06-29T01:57:28.489Z">
+<meta property="article:modified_time" content="2020-06-29T02:28:09.064Z">
 <meta property="article:author" content="问问龙大宝">
 <meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/.com//blog/source/_posts/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/syncDemo.png">
+<meta name="twitter:image" content="http://yoursite.com/2020/06/28/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/_posts/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/syncDemo.png">
 
 
 
@@ -372,13 +372,13 @@
 <li>原理<br>使用javap -v SyncTest 查看字节码文件，以上代码下图所示</li>
 </ol>
 <p>修饰this syncDemo()</p>
-<p><img src="/.com//blog/source/_posts/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/syncDemo.png" alt="示例图片" title="示例图片"></p>
+<p><img src="/2020/06/28/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/_posts/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/syncDemo.png" alt="示例图片"></p>
 <p>修饰静态方法 staticSycnDemo()</p>
-<p><img src="/.com//blog/source/_posts/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/staticSycnDemo.png" alt="示例图片" title="示例图片"></p>
+<p><img src="/2020/06/28/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/blog/source/_posts/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/staticSycnDemo.png" alt="示例图片"></p>
 <p>修饰普通方法 syncDemoMethod()</p>
-<p><img src="/.com//blog/source/_posts/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/syncDemoMethod.png" alt="示例图片" title="示例图片"></p>
+<p><img src="/2020/06/28/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/blog/source/_posts/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/syncDemoMethod.png" alt="示例图片"></p>
 <p>修饰class</p>
-<p><img src="/.com//blog/source/_posts/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/syncClassDemo.png" alt="示例图片" title="示例图片"></p>
+<p><img src="/2020/06/28/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/blog/source/_posts/Java-synchronized%E5%85%B3%E9%94%AE%E5%AD%97/syncClassDemo.png" alt="示例图片"></p>
 <p>从上图可知，分为两种情况，一是通过monitorenter，monitorexit指令实现，另一种为ACC_SYNCHRONIZED标识。</p>
 <ul>
 <li><p>monitorenter 指令</p>
